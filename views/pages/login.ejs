@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <div id="container">
+        <h1>Login</h1>
+        <hr>
+       <form action="/login" method="POST">
+           <label>Username</label><br>
+           <input type="text" name="username" id="userInput"><br>
+           <label>Password</label><br>
+           <input type="password" name="password" id="passInput"><br>
+           <input type="submit" value="Login" id="login"><br>
+       </form>
+       <label id="errMsg" style="color: red;"><%= locals.errMsg %></label><br>
+       <a href="/createUser">Create Account</a>
+       <hr>
+       <label>Copyright &copy; SwitchMaven 2021</label> 
+    </div>
+</center>
+<script src="/static/js/control.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <div id="container">
+        <h1>Create Tweet</h1>
+        <hr>
+        <a href="/">Home</a>
+        <hr>
+       <form action="/createTweet" method="POST">
+           <label>Your Tweet Here</label><br>
+           <textarea name="content" style="width:100%; height: 150px;"></textarea><br>
+           <input type="submit"><br>
+       </form> 
+       <hr>
+       <label>Copyright &copy; SwitchMaven 2021</label>   
+    </div>
+</center>
+</body>
+</html>
